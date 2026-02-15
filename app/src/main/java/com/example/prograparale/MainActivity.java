@@ -23,7 +23,7 @@ public class MainActivity  extends  AppCompatActivity {
 
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.textView);
-        frameLayout_bot = findViewById(R.id.botStart);
+        frameLayout_bot = findViewById(R.id.botRegister);
 
         Thread hilo = new Thread(() -> {
             try {

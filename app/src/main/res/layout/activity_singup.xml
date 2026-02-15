@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="153dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="90dp"
+        app:cardCornerRadius="150dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/singUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="153dp"
+            android:layout_height="136dp"
+            app:srcCompat="@drawable/avatar_2" />
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/botRegister"
+        android:layout_width="412dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="679dp"
+        android:background="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#20A6A6A6"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="12dp"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/emailRegisterText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/emailRegisterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#20A6A6A6"
+        android:drawableLeft="@drawable/baseline_alternate_email_24"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="12dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/passwordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#20A6A6A6"
+        android:drawableLeft="@drawable/icpassword"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/repasswordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/repasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#20A6A6A6"
+        android:drawableLeft="@drawable/icpassword"
+        android:ems="10"
+        android:hint="Re-Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="43dp"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@+id/botRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
