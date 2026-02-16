@@ -1,12 +1,14 @@
 package com.example.prograparale;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import android.view.View;
 import android.widget.FrameLayout ;
 import android.widget.ImageView ;
 import android.widget.Button ;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,6 +32,18 @@ public class RegisterActivity extends AppCompatActivity {
         textView = findViewById(R.id.passwordText);
         textView = findViewById(R.id.repasswordText);
         registerButton = findViewById(R.id.buttonRegister);
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(RegisterActivity.this,
+                        "Usuario Registrado con exito",
+                        Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(RegisterActivity.this, StartActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
