@@ -21,7 +21,7 @@
         tools:srcCompat="@drawable/logo" />
 
     <FrameLayout
-        android:id="@+id/botStart"
+        android:id="@+id/botLogin"
         android:layout_width="412dp"
         android:layout_height="52dp"
         android:background="#673AB7"

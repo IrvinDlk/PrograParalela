@@ -26,7 +26,7 @@ public class StartActivity extends AppCompatActivity {
         imageView = findViewById(R.id.loggoStart);
         loginButton = findViewById(R.id.loginButton);
         singUpButton = findViewById(R.id.singUpButton);
-        frameLayout = findViewById(R.id.botStart);
+        frameLayout = findViewById(R.id.botLogin);
 
         singUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
